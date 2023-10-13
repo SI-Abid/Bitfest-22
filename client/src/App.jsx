@@ -1,7 +1,3 @@
-import React from 'react';
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-import { useMemo } from "react";
-import "./App.css";
 
 export const App = () => {
   const { isLoaded } = useLoadScript({
@@ -11,16 +7,9 @@ export const App = () => {
   const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
 
   return (
-    <div className="App">
-      {!isLoaded ? (
-        <h1>Loading...</h1>
-      ) : (
-        <GoogleMap
-          mapContainerClassName="map-container"
-          center={center}
-          zoom={10}
-        />
-      )}
-    </div>
-  );
+    <>
+      <h1 className='text-red-600'>App</h1>
+      <button className="btn btn-primary">Primary</button>
+    </>
+  )
 }
