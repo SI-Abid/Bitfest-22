@@ -1,0 +1,18 @@
+{
+  "name": "bitfest-22",
+  "version": "1.0.0",
+  "description": "Before you start working, know that we strive for quality. It means you can use any language, tools, third-party services/API, any architecture to show your skills. We will provide requirements that you have to meet to pass, but you can code extra features if you want. Keep in mind, don't overdo it for its sake. Prefer high-quality mandatory requirements over many optional features with lower quality.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
